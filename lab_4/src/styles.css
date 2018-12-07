@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+.valid {
+    background: green;
+    padding: 25px;
+}
+
+.error {
+    background: red;
+    padding: 25px;
+}
+
+.error label {
+    color: white;
+}
+
+p.error {
+    color: white;
+}

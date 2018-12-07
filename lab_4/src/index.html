@@ -1,0 +1,87 @@
+<!doctype html>
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Form tests</h1>
+
+    <h2>Form template before sending form:</h2>
+    <form action="./index.html" method="post">
+        <div class="row">
+            <label for="name">Last name:</label>
+            <input id="name" type="text" name="lastname" required>
+        </div>
+
+        <div class="row">
+        <label for="firstname">First name:</label>
+        <input id="firstname" type="text" name="firstname" required>
+        </div>
+
+        <div class="row">
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" required select> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+        </div>
+
+        <div class="row">
+        <label for="email">Email:</label>
+        <input id="email" type="text" name="email" required>
+        </div>
+
+        <div class="row">
+        <label for="address">Address:</label>
+        <input id="address" type="text" name="address">
+        </div>
+
+        <div class="row">
+        <label for="firstname">Date of birth:</label>
+        <input id="birthdate" type="text" name="birthdate">
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Form validation issue</h2>
+    <p class="error">An error occurred when trying to send the form</p>
+    <form action="./index.html" method="post">
+        <div class="row">
+            <label for="name">Last name:</label>
+            <input id="name" type="text" name="lastname">
+        </div>
+
+        <div class="row">
+        <label for="firstname">First name:</label>
+        <input id="firstname" type="text" name="firstname">
+        </div>
+
+        <div class="row error">
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" required > Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+        </div>
+
+        <div class="row">
+        <label for="email">Email:</label>
+        <input id="email" type="text" name="email">
+        </div>
+
+        <div class="row">
+        <label for="address">Address:</label>
+        <input id="address" type="text" name="address">
+        </div>
+
+        <div class="row error">
+        <label for="firstname">Date of birth:</label>
+        <input id="birthdate" type="text" name="birthdate">
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Form validated with successful</h2>
+    <p class="valid">The form has been sent successfully</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/**
+ * General
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*
+ * Header / menu
+ */
+.menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    background: red;
+    margin-bottom: 25px;
+}
+
+.menu ul {
+    margin: 0;
+    height: 100%;
+}
+
+.menu li {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.menu li a {
+    padding: 0 5px;
+    background: blue;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.menu li a:hover {
+    background: grey;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row section {
+    margin: 10px;
+}
+
+.ingredient {
+    list-style-type: square;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.recette {
+    font-family: "Times New Roman";
+    border: 5px outset black;
+}
+
+.recette li {
+    list-style-type: none;
+}
+
+.terme dt {
+    font-decoration: underline;
+    font-weight: bold;
+}
+
+.terme dd {
+    font-family: "Times New Roman";
+}
+
+footer {
+    padding: 20px;
+    border-top: 5px solid black;
+    margin-top: auto;
+}
+
