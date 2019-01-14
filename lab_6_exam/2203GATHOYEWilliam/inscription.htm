@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Membres</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <a id="register" href="inscription.htm">Inscription</a>
+        <a href="index.htm"><img src="img/topbanner.jpg" alt="Top banner"/></a>
+        <nav>
+            <ul>
+                <li><a href="./index.htm">Accueil</a></li>
+                <li class="sub"><a href="./challenges.htm">Challenges</a>
+                    <ul>
+                        <li><a href="./challenges.htm#applet">[Applet] Hello, I am a Java Applet</a></li>
+                        <li><a href="./challenges.htm#crackit">[CrackIt] Easy starter package</a></li>
+                        <li><a href="./challenges.htm#crypto">[Crypto] Look at my rotation</a></li>
+                        <li><a href="./challenges.htm#exploit">[Exploit] I said ONE cake</a></li>
+                        <li><a href="./challenges.htm#flash">[Flash] Pong</a></li>
+                        <li><a href="./challenges.htm#internet">[Internet] From Russia with love</a></li>
+                        <li><a href="./challenges.htm#javascript">[Javascript] I am a JavaScript. Abuse me</a></li>
+                        <li><a href="./challenges.htm#linux">[Linux] Patch the Elf</a></li>
+                        <li><a href="./challenges.htm#logic">[Logic] It's Just A Starter</a></li>
+                        <li><a href="./challenges.htm#programming">[Programming] Give it to me</a></li>
+                        <li><a href="./challenges.htm#special">[Special] A beautiful lady</a></li>
+                        <li><a href="./challenges.htm#stegano">[Stegano] Double Possibilities!</a></li>
+                    </ul>
+                </li>
+                <li><a href="./membres.htm">Members</a></li>
+                <li><a href="./logout.htm">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content" class="register">
+        <form action="index.htm" action="post">
+            <label for="username">Nom d'utilisateur:</label><br><input type="text" name="username" placeholder="Votre nom d'utilisateur"><br>
+            <label for="password">Mot de passe:</label><br><input type="password" name="password" placeholder="Votre mot de passe"><br>
+            <label for="emailaddress">Adresse email:</label><br><input type="email" name="emailaddress" placeholder="Votre addresse email"><br>
+            <label for="birthdate">Date de naissance:</label><br><input type="date" name="birthdate"><br>
+            <label for="acceptemail">J'accepte de recevoir des courriers électroniques de la part de HackQuest@InPreS:</label> <input type="checkbox" name="acceptemail" value="acceptemail"> 
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+
+    <footer>
+        <p>17 visiteurs connectés</p>
+        <p>Copyright ©2019 Hackfest@INPRES</p>
+    </footer>
+</body>
+</html>

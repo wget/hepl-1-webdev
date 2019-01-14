@@ -1,0 +1,250 @@
+/**
+ * General
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+
+body {
+    /* Needed for sticky footer */
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans";
+    width: 95%;
+    margin: auto;
+}
+body > * {
+  margin: 1em 0;
+}
+
+
+a, a:visited {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+/*
+ * Header / menu
+ */
+header {
+    width: 600px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+header #register {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    color: dimgrey;
+    text-transform: uppercase;
+}
+
+header #register:hover {
+    font-weight: bold;
+    color: white;
+}
+
+header img {
+    width: 100%;
+    display: block;
+    margin: 25px 0;
+}
+
+nav {
+    background: dimgrey;
+    border-radius: 5px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+nav li a, nav li a:visited {
+    color: lightgrey;
+}
+
+nav li:hover a {
+    color: snow;
+}
+
+nav .sub ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav .sub li {
+    padding: 5px;
+}
+
+nav .sub:hover ul {
+    display: block;
+}
+
+nav .sub:hover ul > li {
+    display: block;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: dimgrey;
+}
+
+nav .sub ul > li:hover {
+    background: grey;
+    color: snow;
+}
+
+/*
+ * Content
+ */
+header + figure img {
+    display: block;
+    margin: auto;
+}
+
+#content {
+    width: 800px;
+    background-color: #111111;
+    color: dimgrey;
+    margin: 0 auto;
+    border: 1px solid dimgrey;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#content.home {
+    padding: 25px;
+}
+
+#content.challenges {
+    color: grey;
+    font-size: 15px;
+    border-radius: 0;
+}
+
+#content.challenges a:hover {
+    color: snow;
+}
+
+#content.challenges > ul {
+    list-style-type: none;
+}
+
+#content.challenges ul > li {
+    margin: 50px 0;
+}
+
+#content.membres table {
+    width: 100%;
+    border: 1px solid snow;
+    color: black;
+    font-size: 12px;
+}
+
+#content.membres > table td {
+    text-align: center;
+}
+
+#content.membres > table > tbody > tr > th {
+    text-align: left;
+    text-transform: uppercase;
+    color: snow;
+}
+
+#content.membres > table > thead > tr > th {
+    border: 1px solid snow;
+    color: snow;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#content.membres tr {
+    background: dimgrey;
+}
+
+#content.membres > table > tbody > tr > td {
+    height: 50px;
+}
+
+#content.membres > table > tbody > tr > td > img {
+    height: 40px;
+    width: 40px;
+}
+
+#content.membres tr:nth-child(2n) {
+    background: grey;
+}
+
+#content.register {
+    background-color: dimgrey;
+    border-radius: 0;
+    width: 800px;
+    margin: 10px auto;
+    padding: 15px;
+    color: grey;
+}
+
+#content.register form label {
+    color: lightgrey;
+}
+
+#content.register label {
+    width: 300px;
+    display: inline-block;
+}
+
+#content.register label[for="acceptemail"] {
+    width: auto;
+}
+
+#content.register input {
+    background: lightgrey;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    display: block;
+    border: 1px solid snow;
+    border-radius: 5px;
+}
+
+#content.register input:hover {
+    background-color: snow
+}
+
+#content.register input[type=checkbox] {
+    width: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#content.register input[type=submit] {
+    margin-top: 20px
+}
+
+
+/*
+ * Footer
+ */
+
+footer {
+    border-radius: 5px;
+    background: dimgrey;
+    padding: 10px;
+    margin: 30px;
+    text-transform: uppercase;
+    color: lightgrey;
+}
