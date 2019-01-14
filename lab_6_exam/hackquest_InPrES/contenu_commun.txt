@@ -1,0 +1,21 @@
+menu
+  Accueil
+  Challenges
+    [Applet] Hello, I am a Java Applet
+    [CrackIt] Easy starter package
+    [Crypto] Look at my rotation
+    [Exploit] I said ONE cake
+    [Flash] Pong
+    [Internet] From Russia with love
+    [Javascript] I am a JavaScript. Abuse me
+    [Linux] Patch the Elf
+    [Logic] It's Just A Starter
+    [Programming] Give it to me
+    [Special] A beautiful lady
+    [Stegano] If it's stupid but works
+  Membres
+  Logout
+  
+footer
+  17 visiteurs connectés
+  Copyright ©2019 hackquest@InPrES
