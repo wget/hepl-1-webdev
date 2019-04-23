@@ -50,7 +50,7 @@ if (!empty($address) && !preg_match('/^[:print:]+$/i', $address)) {
 
 // Only check the postal code if it is defined
 // (using short circuit language method).
-if (!empty($postalCode) && !preg_match('/^([0-9]{4})|B[0-9]{4})$/', $postalCode)) {
+if (!empty($postalCode) && !preg_match('/^([0-9]{4})|(B[0-9]{4})$/', $postalCode)) {
     $errors[] = "postalCode";
 }
 
