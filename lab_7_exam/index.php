@@ -76,7 +76,7 @@ if (!empty($_GET["invalid"])) {
           <div class="col-md-6 mb-3">
             <label for="dateBirth">Date of birth<span class="text-muted">*</span></label>
             <div class="input-group">
-            <input type="date" class="form-control" id="dateBirth" name="dateBirth" placeholder="Date of birth" min="1900-01-01" max="<?php echo $currentDate_iso8601 ?>" value="1992-12-17" required>
+            <input type="date" class="form-control" id="dateBirth" name="dateBirth" placeholder="Date of birth" min="1900-01-01" max="<?php echo date('Y-m-d', time()) ?>" value="1992-12-17" required>
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                   </div>
