@@ -111,7 +111,7 @@ $hash = password_hash($infoConcat, PASSWORD_DEFAULT);
     <div class="container">
   <div class="py-5 text-center">
     <h2>Hello!</h2>
-    <p class="lead">Bonjour, <?php echo $firstName . " " . $lastName . ", vous êtes âgé de " . $age . " ans." ?></p>
+    <p class="lead">Bonjour, <?php echo ucfirst($firstName) . " " . ucfirst($lastName) . ", vous êtes âgé de " . $age . " ans." ?></p>
   </div>
 
   <div class="row">
