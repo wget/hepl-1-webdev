@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Interro PHP 2</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Interrogation PHP 2</h1>
+			<p>
+				Pour cette interrogation, il faut 
+				<ol>
+					<li>réaliser une page permettant de s'identifier sur le site (c'est l'aspect technique de la connexion qui sera valorisé, pas le visuel);</li>
+					<li>réaliser un filtre permettant de sélectionner les utilisateurs en utilisant cette page mise à votre disposition.</li>
+				</ol>
+				
+				Le filtre comportera les critères suivants :
+				<ul>
+					<li>leur pseudo en pouvant utiliser les caractères de remplacement de mysql,</li>
+					<li>leur Langue en pouvant utiliser les caractères de remplacement de mysql,</li>
+					<li>leur statut,</li>
+					<li>et toute combinaison des trois éléments précédents.</li>
+				</ul>
+				Les critères peuvent être combinés grâce aux opérateurs booléens ET ou OU au choix de l'utilisateur.
+			</p>
+			<p>
+				L'accès à cette page est conditionné au fait d'être connecté au site.
+			</p>
+			<p>
+				<h3>Exemple de requête</h3>
+				<code>
+					SELECT * FROM `user` WHERE `pseudo` LIKE "%Sa%" OR `langue` LIKE "Italien" OR status=3 
+				</code>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>Filtre</h2>
+			<form method="POST" action="">
+				<div class="form-group">
+					 
+					<label for="pseudo">
+						Pseudo
+					</label>
+					<input type="text" class="form-control" id="pseudo" name="pseudo">
+				</div>
+				<div class="form-group">
+					 
+					<label for="langue">
+						Langue
+					</label>
+					<input type="text" class="form-control" id="langue" name="langue">
+				</div>
+				<div class="form-group">
+					 
+					<label for="status">
+						Statut
+					</label>
+					<select class="form-control" id="status" name="status">
+					  <option></option>
+					  <option>Connecté</option>
+					  <option>Hors ligne</option>
+					  <option>Supprimé</option>
+					</select>
+					<p class="help-block">Penser à adapter le select à vos besoins</p>
+				</div>
+				<div class="form-group">
+					<label for="combinaison">
+						Comment combiner les filtres
+					</label>
+					<select class="form-control" id="combinaison" name="combinaison">
+					  <option></option>
+					  <option>ET</option>
+					  <option>OU</option>
+					</select>
+				</div>				
+				<button type="submit" class="btn btn-primary">
+					Filtrer
+				</button>
+			</form>
+		</div>
+		<div class="col-md-8">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							Nom
+						</th>
+						<th>
+							Prénom
+						</th>
+						<th>
+							Pseudo
+						</th>
+						<th>
+							Langue
+						</th>
+						<th>
+							Statut
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							Thiernesse
+						</td>
+						<td>
+							Cédric
+						</td>
+						<td>
+							ProfThiernesse
+						</td>
+						<td>
+							Français
+						</td>
+						<td>
+							Connecté
+						</td>
+					</tr>
+					<tr>
+						<td>
+							2
+						</td>
+						<td>
+							Sagot
+						</td>
+						<td>
+							Pierre
+						</td>
+						<td>
+							ProfSagot
+						</td>
+						<td>
+							Anglais
+						</td>
+						<td>
+							Hors ligne
+						</td>
+					</tr>
+					<tr>
+						<td>
+							3
+						</td>
+						<td>
+							Madani
+						</td>
+						<td>
+							Nawar
+						</td>
+						<td>
+							ProfMadani
+						</td>
+						<td>
+							Français
+						</td>
+						<td>
+							Supprimé
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>
