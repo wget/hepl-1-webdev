@@ -1,34 +1,6 @@
 <?php
 include("config.php");
 
-class DataBase {
-    private static $instance = null;
-    private static $connection;
-
-    // The constructor is private
-    // to prevent initiation with outer code.
-    private function __construct() {
-
-        echo "database name: $DATABASE_NAME";
-        echo "database username: $DATABASE_USERNAME";
-        echo "password: $DATABASE_PASSWORD";
-        $connection = new PDO(
-            "mysql:host=localhost;dbname=" . $DATABASE_NAME,
-            "hepl",
-            "12345");
-    }
-
-    // The object is created from within the class itself
-    // only if the class has no instance.
-    public static function getConnection() {
-        if (self::$instance == null) {
-            self::$instance = new DataBase();
-        }
-
-        return self::$connection;
-    }
-}
-
 function isConnected() {
 
     if (isset($_SESSION["connected"]) && $_SESSION["connected"] == true) {
